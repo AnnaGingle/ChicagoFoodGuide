@@ -37,7 +37,6 @@
             <ul>
                 <li class="about-cards_item">
                     <div class="card">
-
                         <div class="card_content">
                             <h2 class="card_title">Let's Keep in Touch!
                             </h2>
@@ -49,7 +48,8 @@
             </ul>
 
             <div class="container">
-                <form>
+                <form action="https://send.pageclip.co/jwMP0flLxwHTThgjgovzDTPlIRB2f9b1/contact-us"
+                    class="pageclip-form" method="post">
                     <ul class="flex-outer">
                         <li>
                             <label for="first-name">First Name</label>
@@ -61,7 +61,7 @@
                         </li>
                         <li>
                             <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Enter your email here">
+                            <input type="email" id="email" name="email" placeholder="Enter your email here">
                         </li>
                         <li>
                             <label for="phone">Phone</label>
@@ -101,17 +101,37 @@
                             </ul>
                         </li>
                         <li>
-                            <button class="btn card_btn">Submit</button>
+                            <button type="submit" class="pageclip-form__submit">
+                                <span class="submit-btn">
+                                    Submit
+                                </span>
+
+                            </button>
 
                         </li>
                     </ul>
                 </form>
             </div>
-
-
-
-
         </div>
+        <ul class="social-buttons">
+            <!--FACEBOOK-->
+            <li class="social-button">
+                <div class="social-icon">
+                    <img src="images/Facebook.png">
+                </div>
+            </li>
+            <!--TWITTER-->
+            <li class="social-button">
+                <img src="images/Twitter.png">
+            </li>
+            <!--PINTREST-->
+            <li class="social-button">
+                <img src="images/Pinterest.png">
+            </li>
+            <!--YOUTUBE-->
+            <li class="social-button">
+                <img src="images/Youtube.png">
+            </li>
 
     </main>
 
@@ -122,6 +142,7 @@
     <script src="js/fastclick.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/fixed-responsive-nav.js"></script>
+    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
 </body>
 
 </html>
