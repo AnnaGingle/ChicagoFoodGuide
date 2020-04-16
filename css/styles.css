@@ -47,7 +47,7 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  color: #37302a;
+
   background: rgba(233, 225, 225, 0.836);
   font: normal 100%/1.4 sans-serif;
   text-align: center;
@@ -118,7 +118,6 @@ a:hover {
 
 
 main {
-
   padding-top: 100px;
   background-color: rgb(255, 255, 255);
 }
@@ -174,14 +173,17 @@ p {
 --------------------------------------------- */
 
 header {
-  background: #4000f1ad;
+  background: #03dac6;
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
 
+
 }
+
+
 
 .logo {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -189,7 +191,7 @@ header {
   font-weight: bold;
   line-height: 55px;
   padding: 0 20px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   float: left;
 }
 
@@ -276,23 +278,24 @@ header {
 
 .nav-collapse a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  border-top: 1px solid white;
+  border-top: 1px solid rgb(43, 41, 41);
   text-decoration: none;
-  background: #ce3b1a;
+  background: #ffffff;
   padding: 0.7em 1em;
-  color: #fff;
+  color: rgb(0, 0, 0);
   width: 100%;
   float: left;
 }
 
 .nav-collapse a:active,
 .nav-collapse .active a {
-  background: #b73214;
+  background: #d4ecea44;
 }
 
 @media screen and (min-width: 40em) {
   .nav-collapse a {
-    border-left: 1px solid white;
+    border-left: 1px solid rgb(0, 0, 0);
+    background-color: #03dac6;
     padding: 1.02em 2em;
     text-align: center;
     border-top: 0;
@@ -341,7 +344,7 @@ header {
 }
 
 .nav-toggle:before {
-  color: #fff;
+  color: rgb(0, 0, 0);
   /* Edit this to change the icon color */
   font: normal 28px/55px "responsivenav";
   /* Edit font-size (28px) to change the icon size */
@@ -392,7 +395,7 @@ h1 {
 
 /*homepage read more button*/
 .btn {
-  color: #ffffff;
+  color: black;
   padding: 0.8rem;
   font-size: 14px;
   text-transform: uppercase;
@@ -401,12 +404,12 @@ h1 {
   display: block;
   width: 100%;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0);
+  background: #03dac6;
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.12);
+  background-color: #03dac575;
 }
 
 /* ------------------------------------------
@@ -431,10 +434,11 @@ CARDS
 }
 
 .card {
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+  background: #fff;
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
+
   flex-direction: column;
   overflow: hidden;
 }
@@ -475,7 +479,7 @@ CARDS
 
 
 .card_title {
-  color: #ffffff;
+  color: black;
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -484,11 +488,12 @@ CARDS
 }
 
 .card_text {
-  color: #ffffff;
+  color: black;
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 1.25rem;
   font-weight: 400;
+
 }
 
 @media (min-width: 1281px) {
@@ -520,7 +525,7 @@ FOOTER
   ABOUT PAGE CARDS
 --------------------------------------------- */
 .about-card {
-  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+
   border-radius: 0.25rem;
   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
   display: flex;
@@ -591,11 +596,21 @@ FORM
 .container {
   width: 80%;
   max-width: 1200px;
+
   margin: 0 auto;
+  border: solid 1px rgba(0, 0, 0, 0.089);
+  padding: 10px;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
 }
 
 .container * {
   box-sizing: border-box;
+
+}
+
+input[type=text] {
+  border: 2px solid red;
+  border-radius: 4px;
 }
 
 .flex-outer,
@@ -652,21 +667,30 @@ FORM
 .flex-outer li input:not([type='checkbox']),
 .flex-outer li textarea {
   padding: 15px;
-  border: none;
+  border: 2px solid rgba(0, 0, 0, 0.027);
+  border-radius: 4px;
 }
+
+.flex-outer li input:not([type='checkbox']):focus,
+.flex-outer li textarea:focus {
+  padding: 15px;
+  border: 2px solid #03dac6;
+  outline: none;
+  border-radius: 4px;
+}
+
 
 .flex-outer li button {
   margin-left: auto;
   padding: 8px 16px;
   border: none;
-  background: #333;
-  color: #f2f2f2;
+  background-color: black;
+  color: white;
   text-transform: uppercase;
   letter-spacing: .09em;
   border-radius: 2px;
   width: 100%;
   cursor: pointer;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .flex-inner li {
