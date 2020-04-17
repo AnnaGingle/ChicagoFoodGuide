@@ -482,6 +482,8 @@ CARDS
   color: black;
   font-size: 1.1rem;
   font-weight: 700;
+  height: 100px;
+  width: auto;
   letter-spacing: 1px;
   text-transform: capitalize;
   margin: 0px;
